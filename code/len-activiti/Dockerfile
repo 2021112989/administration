@@ -8,7 +8,7 @@ WORKDIR /app
 
 # 将构建的jar包复制到当前目录
 # 这里假设jar包在/app/target目录下，并且jar包的名称是app.jar
-COPY ./len-activiti/target/lenosp.jar /app
+COPY target/lenosp.jar /app
 
 EXPOSE 8088
 # 指定容器启动时执行的命令
